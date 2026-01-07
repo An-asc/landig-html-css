@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landig</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navegacion -->
+    <nav class="navbar">
+        <div class="container">
+            <img src="img/logo-nav.png"  alt="img-logo" height="100" width="150">
+            <ul class="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+            </ul>
+            <a href="#" class="buttons button-main">Contáctanos</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero">
+        <div class="container-hero">
+                <h1>Explore the life you want to live.<br>Put your money to work</h1>
+                <a href="#" class="buttons-hero button-main">Contáctanos</a>
+        </div>
+    </header>
+    <!-- Servicios Section -->
+    <section id="servicios" class="services">
+        <div class="container-section">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">                  
+                    <i data-lucide="monitor-cloud" class="service-icon"></i>                 
+                    <h3>Desarrollo Web</h3>
+                    <p>Creamos sitios web responsivos y modernos que se adaptan a todos los dispositivos.</p>
+                </div>
+                <div class="service-card">                  
+                    <i data-lucide="monitor-cloud" class="service-icon"></i>                 
+                    <h3>Desarrollo Web</h3>
+                    <p>Creamos sitios web responsivos y modernos que se adaptan a todos los dispositivos.</p>
+                </div>
+                <div class="service-card">                  
+                    <i data-lucide="monitor-cloud" class="service-icon"></i>                 
+                    <h3>Desarrollo Web</h3>
+                    <p>Creamos sitios web responsivos y modernos que se adaptan a todos los dispositivos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vision-section">
+        <div class="container-section-segundo">
+            <h3>AMAZING OF YOUNG KATH</h3>
+            <h2>Helping you connect the dots.<br>So you can see what life could<br>look like into the future.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> repudiandae ullam laudantium, quam soluta hic recusandae possimus temporibus itaque laborum natus aliquid aspernatur.</p>
+        </div>
+        <div class="image-right">
+            <img src="img/fondo-hero-min.png" alt="Young Kath" class="section-image">
+        </div>
+    </section>
+    <hr>
+
+    <section id="testimonios" class="testimonials">
+        <div class="container-testimonios">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"TechSolutions transformó completamente nuestra presencia digital. Nuestras ventas online aumentaron un 150% en solo 3 meses."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p>CEO, ModaExpress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"TechSolutions transformó completamente nuestra presencia digital. Nuestras ventas online aumentaron un 150% en solo 3 meses."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p>CEO, ModaExpress</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Tech<span>Solutions</span></a>
+                    <p>Soluciones digitales para el crecimiento de tu negocio.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#caracteristicas">Características</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Suscríbete a nuestro newsletter</h4>
+                    <p>Recibe las últimas noticias y ofertas especiales.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TechSolutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    lucide.createIcons();
+
+        const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+    </script>
+</body>
+</html>
